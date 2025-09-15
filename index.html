@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Guada 22 años </title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      
+      --card:#ffffff;
+      --accent:#FF6BAA;
+      --muted:#6b6b6b;
+
+      background: url("/img/Gemini_Generated_Image_8cx4yz8cx4yz8cx4.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Outfit',system-ui,Arial;min-height:100vh;margin:0;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:28px}
+    .invite{width:min(760px,96%);background:var(--card);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.08);overflow:hidden;display:grid;grid-template-columns:1fr 360px}
+    .left{padding:36px 40px}
+    .right{background:linear-gradient(180deg, rgba(255,107,170,0.08), rgba(255,191,223,0.05));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px}
+    h1{margin:0;font-size:28px;color:var(--accent)}
+    h2{margin:6px 0 18px;font-size:20px}
+    p{margin:10px 0;color:var(--muted);line-height:1.45}
+    .big{font-size:40px;font-weight:700;margin:10px 0}
+    .details{margin-top:18px;padding:14px;border-radius:12px;background:#fff7fb;border:1px solid rgba(255,107,170,0.08)}
+    .detail-row{display:flex;gap:12px;align-items:center;margin:8px 0}
+    .label{font-weight:600;color:#333;width:90px}
+    .value{color:#333}
+    .note{margin-top:14px;background:#fff;color:#555;padding:12px;border-radius:10px;border:1px dashed rgba(0,0,0,0.06)}
+    .btns{display:flex;gap:10px;margin-top:18px}
+    button{border:0;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+    .print{background:var(--accent);color:white}
+    .save{background:#f2f2f2}
+    .avatar{width:160px;height:160px;border-radius:20px;background:linear-gradient(135deg,#FFD1E8,#FFEEF2);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:22px;color:#9a2760}
+    .small{font-size:13px;color:var(--muted)}
+    footer{font-size:12px;color:var(--muted);margin-top:14px}
+
+    @media (max-width:800px){
+      .invite{grid-template-columns:1fr;gap:0}
+      .right{padding:20px}
+    }
+
+    .btns a.print {
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:600;
+  text-decoration:none;
+}
+  </style>
+</head>
+<body>
+  <article class="invite" role="article">
+    <section class="left">
+      <h1>Hola — Soy Guada :)</h1>
+      <h2>Te invito a festejar conmigo mis <span style="color:var(--accent)">22 añitos</span> 🎉</h2>
+
+      <p class="big">21 de septiembre</p>
+
+      <div class="details" aria-labelledby="detalles">
+        <div class="detail-row"><div class="label">Fecha</div><div class="value">21/09</div></div>
+        <div class="detail-row"><div class="label">Hora</div><div class="value">12:30 pm</div></div>
+        <div class="detail-row"><div class="label">Ubicación</div><div class="value"><a href="https://share.google/7O1lFp9I5qj8ERJiZ" target="_blank">
+      Click acá 📍
+    </a></div></div>
+      </div>
+
+      <div class="note">No olvides traer tu bebida y cubiertos. 😊</div>
+
+      <div class="btns">
+  <a class="print" 
+     href="https://wa.me/5493795343745?text=Hola%20Guada!%20Confirmo%20mi%20asistencia%20a%20tu%20cumple%20🥳"  
+     target="_blank">
+     Confirmar !!
+  </a>
+</div>
+      
+
+      
+    </section>
+
+    <aside class="right">
+      <div class="avatar">Guada<br><span style="font-size:12px;opacity:0.9">22</span></div>
+      <p class="small" style="margin-top:14px;text-align:center;max-width:220px">¡Va a ser un día hermoso! Traé muchas ganas de celebrar y buena onda.</p>
+    </aside>
+  </article>
+
+  <script>
+    function copyInvite(){
+      const text = `Hola, soy Guada. Te invito a festejar conmigo mis 22 añitos el día 21/09 a las 12:00 pm. No olvides traer tu bebida y cubiertos.`
+      navigator.clipboard?.writeText(text).then(()=>{
+        alert('Texto copiado al portapapeles!')
+      }).catch(()=>{alert('No se pudo copiar automáticamente. Seleccioná el texto manualmente: ' + text)})
+    }
+  </script>
+</body>
+</html>
